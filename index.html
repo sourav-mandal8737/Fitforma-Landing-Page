@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitForma - Your Personal Fitness and Wellness App</title>
+    <meta name="description" content="FitForma is your all-in-one app for fitness, nutrition, and wellness. Achieve your fitness goals with personalized workout plans, nutrition guidance, and wellness tips.">
+    <meta name="keywords" content="fitness app, workout plans, nutrition guidance, wellness tips, fitness goals, healthy recipes, FitForma">
+    <meta name="author" content="FitForma">
+    <meta name="robots" content="index, follow">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        .hero {
+            background-color: black;
+            color: white;
+            padding: 160px 5%;
+            text-align: center;
+            background-image: url('Images/background.jpeg');
+            background-size: cover;
+            background-position: center;
+            margin-top: 0px;
+            position: relative;
+        }
+
+        .hero img.logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 90px;
+            width: 90px;
+        }
+
+        .hero h1 {
+            font-size: 3.0em;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 50px;
+            color: #00e9ff;
+            font-style: italic;
+        }
+
+        .hero .cta {
+            background-color: deeppink;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1em;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .features {
+            padding: 30px 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .feature {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            flex: 1 1 200px;
+            border-radius: 10px;
+            max-width: 90%;
+        }
+
+        .feature img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 2px;
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .feature h2 {
+            font-size: 1.25em;
+            margin-bottom: 0px;
+        }
+
+        .feature p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .feature .cta {
+            background-color: #ff7f50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .testimonials {
+            padding: 40px 5%;
+            background-color: #d67acb;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .testimonials h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width: 90%;
+            max-width: 300px;
+            text-align: left;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            color: #555;
+            text-align: center;
+        }
+
+        .testimonial .name {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+
+        .pricing {
+            padding: 5px 5%;
+            background-color: #42a5f5;
+            color: white;
+            background-image: url('Images/y.jpeg');
+            text-align: center;
+        }
+
+        .pricing h2 {
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+
+        .pricing-plan {
+            background-color: white;
+            color: #333;
+            padding: 30px;
+            margin: 10px;
+            display: inline-block;
+            width: 90%;
+            max-width: 300px;
+            text-align: left;
+            border-radius: 10px;
+        }
+
+        .pricing-plan h3 {
+            font-size: 1.25em;
+            margin-bottom: 10px;
+        }
+
+        .pricing-plan p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .pricing-plan .price {
+            font-size: 1.75em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .pricing-plan .cta {
+            background-color: #ff7f50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .faqs {
+            padding: 10px 5%;
+            background-color: #ffffff;
+            text-align: left;
+            background-image: url('Images/v.jpeg');
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .faqs h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .faq-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .faq {
+            flex: 1 1 45%;
+            margin: 7px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq h3 {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .faq p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .stats {
+            background-color: #42a5f5;
+            color: white;
+            padding: 10px 5%;
+            background-image: url('Images/aa.jpeg');
+            text-align: center;
+        }
+
+        .stats h2 {
+            font-size: 2em;
+            margin-bottom: 0px;
+        }
+
+        .stats .stat-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .stats .stat-item {
+            flex: 1 1 150px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .stats .stat-item h3 {
+            font-size: 1.75em;
+            color: black;
+            margin-bottom: 12px;
+        }
+
+        .stats .stat-item p {
+            font-size: 1.4em;
+        }
+
+        .stat-item i {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 0.9em;
+            }
+            .hero .cta {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75em;
+            }
+            .hero p {
+                font-size: 0.8em;
+            }
+            .hero .cta {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .testimonial {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <img src="Images/logo.jpg" alt="FitForma Logo" class="logo">
+    <h1>Achieve Your Fitness Goals with FitForma</h1>
+    <b><p>Your all-in-one app for fitness, nutrition, and wellness.</p></b>
+    <a href="#" class="cta" id="download-btn">Download FitForma</a>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <img src="Images/workout-plans.jpeg" alt="Workout Plans">
+        <h2>Personalized Workout Plans</h2>
+        <p>Get custom workout plans tailored to your fitness goals and level.</p>
+        <a href="#" class="cta" id="get-fitforma-1">Get FitForma</a>
+    </div>
+    <div class="feature">
+        <img src="Images/nutrition-guidance.jpeg" alt="Nutrition Guidance">
+        <h2>Nutrition Guidance</h2>
+        <p>Access healthy recipes and nutrition tips to complement your workouts.</p>
+        <a href="#" class="cta" id="get-fitforma-2">Get FitForma</a>
+    </div>
+    <div class="feature">
+        <img src="Images/wellness-tips.jpeg" alt="Wellness Tips">
+        <h2>Wellness Tips</h2>
+        <p>Improve your mental and physical well-being with expert advice.</p>
+        <a href="#" class="cta" id="get-fitforma-3">Get FitForma</a>
+    </div>
+    <div class="feature">
+    <img src="Images/24by7.jpeg" alt="24/7 Customer Service">
+    <h2>24/7 Customer Service</h2>
+    <p>Get assistance anytime, anywhere to resolve any issues you may encounter.</p>
+    <a href="#" class="cta" id="get-fitforma-4">Get FitForma</a>
+</div>
+</section>
+
+<section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">
+        <center><img src="Images/rahul.jpg" alt="Customer 1"></center>
+        <div class="name">Rahul Mondal</div>
+        <p>"FitForma has transformed my fitness journey. The personalized plans and easy-to-follow guides are fantastic!"</p>
+    </div>
+    <div class="testimonial">
+        <center><img src="Images/manoj.jpg" alt="Customer 2"></center>
+        <div class="name">Manoj Mandal</div>
+        <p>"I love the nutrition tips! They've helped me make better choices and stay on track with my diet. I am really grateful to FitForma."</p>
+    </div>
+    <div class="testimonial">
+        <center><img src="Images/sajal.jpg" alt="Customer 3"></center>
+        <div class="name">Sajal Ghosh</div>
+        <p>"This is the best fitness app I have ever used! The app is very easy to use and it has really helped me a lot. I really want to thank FitForma"</p>
+    </div>
+</section>
+
+<section class="pricing">
+    <h2>Choose Your Plan</h2>
+    <div class="pricing-plan">
+        <h3>Basic Plan</h3>
+        <p>Access to workout plans and basic nutrition tips.</p>
+        <div class="price">$9.99/month</div>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+    <div class="pricing-plan">
+        <h3>Pro Plan</h3>
+        <p>All features including advanced nutrition guidance and wellness tips.</p>
+        <div class="price">$19.99/month</div>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+</section>
+
+<section class="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+        <div class="faq">
+            <h3>How do I cancel my subscription?</h3>
+            <p>You can cancel your subscription at any time by visiting your account settings.</p>
+        </div>
+        <div class="faq">
+            <h3>Is FitForma available on all devices?</h3>
+            <p>Yes, FitForma is available on both Android and iOS devices.</p>
+        </div>
+        <div class="faq">
+            <h3>Do you offer a free trial?</h3>
+            <p>Yes, we offer a 7-day free trial for new users.</p>
+        </div>
+        <div class="faq">
+            <h3>Can I track my progress with FitForma?</h3>
+            <p>Yes, you can track your workouts, nutrition, and overall progress in the app.</p>
+        </div>
+        <div class="faq">
+            <h3>Do you provide support?</h3>
+            <p>Yes, we offer 24/7 customer support through the app and our website.</p>
+        </div>
+        <div class="faq">
+            <h3>How often is the content updated?</h3>
+            <p>We update our content regularly to ensure you get the latest workout plans and nutrition tips.</p>
+        </div>
+        <div class="faq">
+            <h3>Are there any in-app purchases?</h3>
+            <p>Besides subscription plans, we offer some premium features as in-app purchases.</p>
+        </div>
+        <div class="faq">
+            <h3>Is my data secure with FitForma?</h3>
+            <p>Yes, we prioritize your privacy and security. Your data is encrypted and securely stored.</p>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <h2>Our Global Impacts</h2>
+    <div class="stat-list">
+        <div class="stat-item">
+            <h3>1M+</h3>
+            <p>Downloads</p>
+        </div>
+        <div class="stat-item">
+            <h3>5M+</h3>
+            <p>Workouts Completed</p>
+        </div>
+        <div class="stat-item">
+            <h3>95.8%</h3>
+            <p>User Satisfaction Rate</p>
+        </div>
+        <div class="stat-item">
+            <h3>200+</h3>
+            <p>Healthy Recipes</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 FitForma. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+</footer>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+    document.getElementById('download-btn').addEventListener('click', function() {
+        alert('Your download has started');
+    });
+
+    document.getElementById('get-fitforma-1').addEventListener('click', function() {
+        alert('Your download has started');
+    });
+
+    document.getElementById('get-fitforma-2').addEventListener('click', function() {
+        alert('Your download has started');
+    });
+
+    document.getElementById('get-fitforma-3').addEventListener('click', function() {
+        alert('Your download has started');
+    });
+
+    document.getElementById('get-fitforma-4').addEventListener('click', function() {
+        alert('Your download has started');
+    });
+</script>
+
+</body>
+</html>
