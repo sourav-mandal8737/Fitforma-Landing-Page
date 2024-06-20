@@ -1,4 +1,4 @@
-# FitForma README
+# FitForma
 
 FitForma is an all-in-one fitness and wellness app designed to help users achieve their fitness goals through personalized workout plans, nutrition guidance, and wellness tips. Here's a detailed overview of the app and its features:
 
@@ -57,13 +57,3 @@ FitForma is an all-in-one fitness and wellness app designed to help users achiev
 8. **Responsive Design**:
    - **Adaptability**: Optimized for desktops, tablets, and smartphones
    - **Media Queries**: Adjustments for different screen sizes
-
-9. **Footer**:
-   - **Content**: © 2024 FitForma. All rights reserved.
-   - **Links**: Privacy Policy and Terms of Service
-
-10. **User Interaction**:
-    - **JavaScript**: Alerts users about download initiation
-    - **Buttons**: Multiple call-to-action buttons throughout the page for easy access
-
-FitForma is designed to provide a seamless and engaging user experience, making it easy for users to achieve their fitness and wellness goals. With its comprehensive feature set, user-friendly design, and strong community support, FitForma is a valuable tool for anyone looking to improve their health and well-being.
